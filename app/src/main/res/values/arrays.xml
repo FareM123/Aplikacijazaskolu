@@ -1,0 +1,26 @@
+<resources>
+    <string-array name="smjers">
+        <item>GIMNAZIJSKI</item>
+        <item>IB</item>
+        <item>IT</item>
+    </string-array>
+    <string-array name="smjersNac">
+        <item>JEZIČKI</item>
+        <item>DVOJEZIČNI</item>
+        <item>PRIRODNI</item>
+        <item>DRUŠTVENI</item>
+        <item>MATEMATIČKO-INFORMATIČKI</item>
+        <item>OPĆA GIMNAZIJA</item>
+        <item>NI JEDAN</item>
+    </string-array>
+    <string-array name="smjersVjeronauk">
+        <item>ISLAMSKA VJERONAUKA</item>
+        <item>PRAVOSLAVNA VJERONAUKA</item>
+        <item>KATOLIČKA VJERONAUKA</item>
+        <item>DRUŠTVO-KULTURA-RELIGIJA</item>
+    </string-array>
+    <string-array name="smjersDSD">
+        <item>DSD</item>
+        <item>BEZ DSD</item>
+    </string-array>
+</resources>
