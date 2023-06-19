@@ -1,10 +1,12 @@
 <resources>
     <string-array name="smjers">
+        <item>SMEJROVI</item>
         <item>GIMNAZIJSKI</item>
         <item>IB</item>
         <item>IT</item>
     </string-array>
     <string-array name="smjersNac">
+        <item>GIMNAZIJSKI SMJEROVI</item>
         <item>JEZIČKI</item>
         <item>DVOJEZIČNI</item>
         <item>PRIRODNI</item>
@@ -14,6 +16,7 @@
         <item>NI JEDAN</item>
     </string-array>
     <string-array name="smjersVjeronauk">
+        <item>VJERONAUKA</item>
         <item>ISLAMSKA VJERONAUKA</item>
         <item>PRAVOSLAVNA VJERONAUKA</item>
         <item>KATOLIČKA VJERONAUKA</item>
