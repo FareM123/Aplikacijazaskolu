@@ -16,6 +16,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.OkHttpClient;
+import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.Multipart;
+import retrofit2.http.POST;
+import retrofit2.http.Part;
 
 
 import java.io.File;
@@ -23,6 +36,10 @@ import java.io.File;
 
 
 public class MainActivity extends AppCompatActivity {
+    public void upload() {
+        FileUploader fileUploader = new FileUploader(getApplicationContext());
+        fileUploader.uploadFileToServer();
+    }
     private Spinner spinner;
     private Spinner spiner2;
     private Spinner spiner3;
@@ -46,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         databaseHelper = new DatabaseHelper(this);
         database = databaseHelper.getWritableDatabase();
+        File uceniciDatabase = new File("path/to/your/database.db");
+
+
 
         // Set up the OnItemSelectedListener for the first dropdown spinner
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -88,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
         button.setOnClickListener(view -> {
             createUser();
-            onUploadButtonClick();
+            upload();
         });
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
